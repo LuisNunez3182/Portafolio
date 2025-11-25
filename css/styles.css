@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   background: #0f1d26;
   color: #e1e6e5;
   min-height: 100vh;
@@ -151,7 +151,22 @@ h6 {
   text-decoration: underline;
 }
 
+.github-cube {
+  color: #3fb0c8;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
 
+.github-cube:hover {
+  color: #e1e6e5;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
 
 .glass-card {
   background: rgba(15, 29, 38, 0.5);
