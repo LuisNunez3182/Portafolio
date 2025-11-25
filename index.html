@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio profesional de Luis Ernesto Nuñez" />
+  <title>Portafolio | Luis Ernesto Nuñez</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeuk0pZK0s8AjtKq6HgMH13X8CH+GPJ6u1Y6Psv3gkP7K0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <nav class="glass-nav navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="#presentacion">
+        Luis Ernesto Nuñez
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav nav-cube-group">
+          <li class="nav-item">
+            <a class="nav-cube-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-cube-link" href="#tecnologias">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-cube-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-cube-link" href="#certificados">Certificados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-cube-link" href="#contacto">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-cube-link" href="https://github.com/LuisNunez3182" target="_blank" rel="noreferrer">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="presentacion" class="hero container reveal">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <p class="eyebrow">Hola, soy</p>
+          <h1 class="display-4 fw-bold">Luis Ernesto Nuñez</h1>
+          <p class="lead role">ingeniero en sistemas</p>
+          <p class="hero-copy">
+            Construyo experiencias digitales estratégicas con una mezcla de
+            ingeniería de software, diseño y liderazgo técnico. Me apasiona
+            desarrollar soluciones que escalen y generen impacto real en los
+            negocios.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-outline-light btn-lg" href="#contacto">Hablemos</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="hero-portrait">
+            <img src="./assets/Foto.png" alt="Foto de Luis Ernesto Nuñez" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Perfil</p>
+          <h2>Sobre mí</h2>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <div class="glass-card about-text" id="aboutText"></div>
+          </div>
+          <div class="col-lg-7">
+            <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" id="aboutCarouselInner"></div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <p class="carousel-caption-helper" id="aboutSubtitle"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="section-padding alt-background reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Stack</p>
+          <h2>Tecnologías</h2>
+        </div>
+        <div class="row g-4" id="techStack"></div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Casos reales</p>
+          <h2>Proyectos destacados</h2>
+        </div>
+        <div class="row g-4" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section id="certificados" class="section-padding alt-background reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Credenciales</p>
+          <h2>Certificados & participaciones</h2>
+        </div>
+        <div class="certificates-wrapper" id="certificatesWrapper"></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Conectemos</p>
+          <h2>Contacto</h2>
+        </div>
+        <div class="contact-bar glass-card">
+          <div>
+            <p class="label">Correo</p>
+            <a href="mailto:lenunez.dev@gmail.com">lenunez.dev@gmail.com</a>
+          </div>
+          <div>
+            <p class="label">Teléfono</p>
+            <a href="tel:+573004567890">+57 300 456 7890</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 text-center">
+    <p class="mb-0">© <span id="year"></span> Luis Ernesto Nuñez — Ingeniería + Creatividad</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./data/sobre_mi.js"></script>
+  <script src="./data/proyectos.js"></script>
+  <script src="./data/certificados.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
